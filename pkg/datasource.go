@@ -681,6 +681,7 @@ type instanceSettings struct {
 	name         string
 	accessKey    string
 	accessSecret string
+    roleArn      string // 新增RoleArn
 }
 
 func newDataSourceInstance(setting backend.DataSourceInstanceSettings) (instancemgmt.Instance, error) {
